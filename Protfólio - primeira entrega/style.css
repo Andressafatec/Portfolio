@@ -1,0 +1,343 @@
+/* margem */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* menu */
+.navbar{
+    background-color: #4682B4;
+    position: fixed;
+    width: 100%;
+    height: 12%;
+    z-index: 999;
+    padding: 20px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #87CEEB;
+}
+
+.navbar .menu li  ul{
+    position:absolute;
+    top:25px;
+    background-color:#fff;
+    display:none;
+}
+/* classe section*/
+
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.sobre, .projeto, .hab, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.projeto .serv-content,
+.hab .hab-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: #87CEEB;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* Classe ínicio */
+
+.inicio{
+    display: flex;
+    background: url("imagem de fundo.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.inicio .text-1{
+    font-size: 27px;
+    margin: 5%;
+    margin-left: -20%;
+}
+.inicio .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -30%;
+    width: 700px;
+}
+
+.inicio a{
+    display: inline-block;
+    background: c#87CEEB;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #87CEEB;
+    transition: all 0.3s ease;
+}
+.inicio a:hover{
+    color: #87CEEB;
+    background: none;
+}
+
+/* Classe sobre */
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+.sobre .title::after{
+    content: "Quem eu sou?";
+}
+
+.sobre img{
+    height: 400px;
+    width: 400px;
+    margin-left: 33%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.sobre p{
+    text-align: justify;
+}
+.sobre .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px;
+}
+.sobre a{
+    display: inline-block;
+    background: #87CEEB;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-left: 40%;
+    border-radius: 6px;
+    border: 2px solid #87CEEB;
+    transition: all 0.3s ease;
+}
+.sobre .right a:hover{
+    color: #87CEEB;
+    background: none;
+}
+
+/* projeto */
+
+.projeto {
+    color:#fff;
+    background: #123798;
+}
+.projeto .title::after{
+    background: #123798;
+    content: "O que eu ofereço?";
+}
+.projeto .card{
+    width: calc(33% - 20px);
+    background: #4169e1;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.projeto .card:hover{
+    background: #87CEEB;
+}
+.projeto .card .box{
+    transition: all 0.3s ease;
+}
+.projeto .card:hover .box{
+    transform: scale(1.05);
+}
+.projeto .card i{
+    font-size: 50px;
+    color: #87CEEB;
+    transition: color 0.3s ease;
+}
+.projeto .card:hover i{
+    color: #fff;
+}
+.projeto .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* Classe habilidades */
+
+.hab .title::after{
+    content: "O que eu sei?";
+}
+.hab .column{
+    width: calc(50% - 30px);
+}
+.hab .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.hab .left p{
+    text-align: justify;
+}
+.hab .left a{
+    display: inline-block;
+    background: #87CEEB;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #87CEEB;
+    transition: all 0.3s ease;
+}
+.hab .left a:hover{
+    color: #87CEEB;
+    background: none;
+}
+.hab .right .bars{
+    margin-bottom: 15px;
+}
+.hab .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.hab .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.hab .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.hab .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #87CEEB;
+}
+.hab-content .right .html::before{
+    width: 80%;
+}
+.hab-content .right .css::before{
+    width: 80%;
+}
+.hab-content .right .js::before{
+    width: 50%;
+}
+.hab-content .right .php::before{
+    width: 70%;
+}
+.hab-content .right .mysql::before{
+    width: 80%;
+}
+
+.contact .title::after{
+    content: "Entrar em contato";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
